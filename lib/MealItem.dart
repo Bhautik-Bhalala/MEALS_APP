@@ -9,7 +9,7 @@ class MmealItem extends StatelessWidget {
   final int duration;
   final Affordability affordability;
   final Complexity complexity;
-  final Function removeitem;
+  // final Function removeitem;
 
   MmealItem(
       this.id,
@@ -18,7 +18,7 @@ class MmealItem extends StatelessWidget {
       this.duration,
       this.affordability,
       this.complexity,
-      this.removeitem
+      // this.removeitem
       );
 
   String get complexityText {
@@ -57,7 +57,7 @@ class MmealItem extends StatelessWidget {
       MealDetail.routename,
       arguments: id ).then((value) => {
         if (value != null){
-           removeitem(value),
+           // removeitem(value),
         }
     });
   }
